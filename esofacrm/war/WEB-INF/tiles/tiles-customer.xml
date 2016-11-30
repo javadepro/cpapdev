@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<!-- Customer -->
+	<definition name="customer-list" extends="baseLayout">
+		<put-attribute name="title" value="Customer" />
+		<put-attribute name="body" value="/WEB-INF/jsp/customer/list.jsp" />
+	</definition>
+	<definition name="customer-onepager-view" template="/WEB-INF/jsp/customer/onepagerview.jsp" /> 
+	<definition name="customer-form" template="/WEB-INF/jsp/customer/form.jsp" /> 
+	
+	<!-- For adding new user only -->
+	<definition name="customer-onepager-add" template="/WEB-INF/jsp/customer/onepager-add.jsp" /> 
+	
+	<!-- One pager -->
+	<definition name="customer-onepager-edit" template="/WEB-INF/jsp/customer/onepageredit.jsp" /> 
+	<definition name="customer-basic-form" template="/WEB-INF/jsp/customer/form-basic.jsp" /> 
+	<definition name="customer-medical-form" template="/WEB-INF/jsp/customer/form-medical.jsp" /> 
+	<definition name="customer-insurance-form" template="/WEB-INF/jsp/customer/form-insurance.jsp" /> 
+	<definition name="customer-insurance-type1-form" template="/WEB-INF/jsp/customer/form-insurance-type1.jsp" /> 
+	<definition name="customer-insurance-type2-form" template="/WEB-INF/jsp/customer/form-insurance-type2.jsp" /> 
+	<definition name="customer-insurance-type3-form" template="/WEB-INF/jsp/customer/form-insurance-type3.jsp" /> 
+	<definition name="customer-insurance-type4-form" template="/WEB-INF/jsp/customer/form-insurance-type4.jsp" /> 
+	<definition name="customer-payment-form" template="/WEB-INF/jsp/customer/form-payment.jsp" />
+	<definition name="customer-cpap-form" template="/WEB-INF/jsp/customer/form-cpap.jsp" />  
+	<!-- Tabs -->
+	<definition name="customer-tabedit" template="/WEB-INF/jsp/customer/tabedit.jsp" /> 
+	<definition name="customer-tabview" template="/WEB-INF/jsp/customer/tabview.jsp" /> 
+	<definition name="customer-basic-view" template="/WEB-INF/jsp/customer/view-basic.jsp" /> 
+	<definition name="customer-medical-view" template="/WEB-INF/jsp/customer/view-medical.jsp" /> 
+	<definition name="customer-cpap-view" template="/WEB-INF/jsp/customer/view-cpap.jsp" />
+	<definition name="customer-insurance-view" template="/WEB-INF/jsp/customer/view-insurance.jsp" /> 
+	<definition name="customer-payment-view" template="/WEB-INF/jsp/customer/view-payment.jsp" /> 
+	<definition name="customer-alert-view" template="/WEB-INF/jsp/customer/view-alerts.jsp" /> 
+	<definition name="customer-event-view" template="/WEB-INF/jsp/customer/view-events.jsp" />
+	<definition name="customer-file-view" template="/WEB-INF/jsp/customer/view-file.jsp" /> 
+	
+	<!-- Alert Form -->
+	<definition name="customer-alert-form" template="/WEB-INF/jsp/customer/form-alert.jsp" /> 
+	
+	<!-- Event Form -->
+	<definition name="customer-event-form-for-dismiss" template="/WEB-INF/jsp/customer/form-event-for-dismiss.jsp" /> 
+	<definition name="customer-event-form" template="/WEB-INF/jsp/customer/form-event.jsp" /> 
+	
+	<!--  Label  -->
+	<definition name="customer-label-addressInfo-view" template="/WEB-INF/jsp/customer/label/addressInfo.jsp" />
+	<definition name="customer-label-cpapInfo-view" template="/WEB-INF/jsp/customer/label/cpapInfo.jsp" /> 
+	<definition name="customer-label-patientInfo-view" template="/WEB-INF/jsp/customer/label/patientInfo.jsp" />  
+	
+	<!--  Search -->
+	<definition name="customer-search" extends="baseLayout">
+		<put-attribute name="title" value="Customer" />
+		<put-attribute name="body" value="/WEB-INF/jsp/customer/search.jsp" />
+	</definition>	
+	<definition name="customer-search-result" template="/WEB-INF/jsp/customer/search.jsp" /> 
+	
+	
+	<definition name="customer-mailerlite-msg" template="/WEB-INF/jsp/message.jsp" />
+	
+</tiles-definitions>

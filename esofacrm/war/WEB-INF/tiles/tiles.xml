@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/jsp/layout/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="head" value="/WEB-INF/jsp/layout/head.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+		<put-attribute name="navi" value="/WEB-INF/jsp/layout/navi.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="message" template="/WEB-INF/jsp/message.jsp"></definition>
+	
+	<!-- 
+	<definition name="message" extends="baseLayout">
+		<put-attribute name="title" value="Message" />
+		<put-attribute name="body" value="/WEB-INF/jsp/message.jsp" />
+	</definition>
+	 -->
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Message" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	
+	<definition name="byebye" template="/WEB-INF/jsp/bye.jsp"></definition>
+	
+	
+	<!-- ADMIN -->
+	<definition name="admin-uploader-form" extends="baseLayout">
+		<put-attribute name="title" value="Admin - Uploader" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/uploader/form.jsp" />
+	</definition>
+	<definition name="admin-data-delete-form" extends="baseLayout">
+		<put-attribute name="title" value="Admin - Uploader" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/data-delete/form.jsp" />
+	</definition>
+	<definition name="admin-uploader-success" extends="baseLayout">
+		<put-attribute name="title" value="Admin - Uploader" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/uploader/success.jsp" />
+	</definition>
+	<definition name="admin-exporter-form" extends="baseLayout">
+		<put-attribute name="title" value="Admin - Exporter" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/exporter/form.jsp" />
+	</definition>
+</tiles-definitions>

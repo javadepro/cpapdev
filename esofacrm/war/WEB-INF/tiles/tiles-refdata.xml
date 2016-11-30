@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<!--  REFERENCE DATA MODULE -->
+	<!--  REFDATA: INDEX -->
+	<definition name="refdata-landing" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/index.jsp" />
+	</definition>
+	
+	<!--  REFDATA: FAMILY DOCTOR -->
+	<definition name="refdata-family-doctor-form" template="/WEB-INF/jsp/refdata/family-doctor/form.jsp" />
+	<definition name="refdata-family-doctor-view" template="/WEB-INF/jsp/refdata/family-doctor/view.jsp" />
+	<definition name="refdata-family-doctor-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Family Doctor" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/family-doctor/list.jsp" />
+	</definition>
+	
+	<!--  REFDATA: DENTIST -->
+	<definition name="refdata-dentist-form" template="/WEB-INF/jsp/refdata/dentist/form.jsp" />
+	<definition name="refdata-dentist-view" template="/WEB-INF/jsp/refdata/dentist/view.jsp" />
+	<definition name="refdata-dentist-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Dentist" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/dentist/list.jsp" />
+	</definition>
+		
+	
+	<!-- REFDATA:  SLEEP DOCTOR -->
+	<definition name="refdata-sleep-doctor-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Doctor" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/sleep-doctor/list.jsp" />
+	</definition>
+	<definition name="refdata-sleep-doctor-form" template="/WEB-INF/jsp/refdata/sleep-doctor/form.jsp" />
+	<definition name="refdata-sleep-doctor-view" template="/WEB-INF/jsp/refdata/sleep-doctor/view.jsp" />
+	<definition name="refdata-sleep-doctor-clinic-form" template="/WEB-INF/jsp/refdata/doctor/sleep/clinic-form.jsp" />
+	
+	<!-- REFDATA: SLEEP CLINIC -->
+	<definition name="refdata-sleep-clinic-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Clinic" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/sleep-clinic/list.jsp" />
+	</definition>
+	<definition name="refdata-sleep-clinic-view" template="/WEB-INF/jsp/refdata/sleep-clinic/view.jsp" />
+	<definition name="refdata-sleep-clinic-form" template="/WEB-INF/jsp/refdata/sleep-clinic/form.jsp" />
+	
+	<!-- REFDATA: DENTAL CLINIC -->
+	<definition name="refdata-dental-clinic-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Dental Clinic" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/dental-clinic/list.jsp" />
+	</definition>
+	<definition name="refdata-dental-clinic-view" template="/WEB-INF/jsp/refdata/dental-clinic/view.jsp" />
+	<definition name="refdata-dental-clinic-form" template="/WEB-INF/jsp/refdata/dental-clinic/form.jsp" />	
+	
+	<!-- REFDATA: INSURANCE PROVIDER -->
+	<definition name="refdata-insurance-provider-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Insurance Provider" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/insurance-provider/list.jsp" />
+	</definition>
+	<definition name="refdata-insurance-provider-form" template="/WEB-INF/jsp/refdata/insurance-provider/form.jsp" />
+	<definition name="refdata-insurance-provider-view" template="/WEB-INF/jsp/refdata/insurance-provider/view.jsp" />
+	
+	<!-- REFDATA: CLINICIAN -->
+	<definition name="refdata-clinician-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Clinician" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/clinician/list.jsp" />
+	</definition>
+	<definition name="refdata-clinician-form" template="/WEB-INF/jsp/refdata/clinician/form.jsp" />
+	<definition name="refdata-clinician-view" template="/WEB-INF/jsp/refdata/clinician/view.jsp" />
+	
+	<!-- REFDATA: CPAP diagnosis -->
+	<definition name="refdata-cpap-diagnosis-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Clinician" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/cpap-diagnosis/list.jsp" />
+	</definition>
+	<definition name="refdata-cpap-diagnosis-form" template="/WEB-INF/jsp/refdata/cpap-diagnosis/form.jsp" />
+	<definition name="refdata-cpap-diagnosis-view" template="/WEB-INF/jsp/refdata/cpap-diagnosis/view.jsp" />
+	
+	<!-- REFDATA: Contact Preference -->
+	<definition name="refdata-contact-preference-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Clinician" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/contact-preference/list.jsp" />
+	</definition>
+	<definition name="refdata-contact-preference-form" template="/WEB-INF/jsp/refdata/contact-preference/form.jsp" />
+	<definition name="refdata-contact-preference-view" template="/WEB-INF/jsp/refdata/contact-preference/view.jsp" />
+	
+		<!-- REFDATA: Discount Reason -->
+	<definition name="refdata-discount-reason-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Discount Reason" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/discount-reason/list.jsp" />
+	</definition>
+	<definition name="refdata-discount-reason-form" template="/WEB-INF/jsp/refdata/discount-reason/form.jsp" />
+	<definition name="refdata-discount-reason-view" template="/WEB-INF/jsp/refdata/discount-reason/view.jsp" />
+	
+	
+	<!-- REFDATA: Appointment Preference -->
+	<definition name="refdata-appointment-preference-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Clinician" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/appointment-preference/list.jsp" />
+	</definition>
+	<definition name="refdata-appointment-preference-form" template="/WEB-INF/jsp/refdata/appointment-preference/form.jsp" />
+	<definition name="refdata-appointment-preference-view" template="/WEB-INF/jsp/refdata/appointment-preference/view.jsp" />
+	
+	<!--  REFDATA: FUNDING OPTION -->
+	<definition name="refdata-funding-option-form" template="/WEB-INF/jsp/refdata/funding-option/form.jsp" />
+	<definition name="refdata-funding-option-view" template="/WEB-INF/jsp/refdata/funding-option/view.jsp" />
+	<definition name="refdata-funding-option-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Funding Option" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/funding-option/list.jsp" />
+	</definition>
+	
+	<!-- REFDATA: SHOP -->
+	<definition name="refdata-shop-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Shop" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/shop/list.jsp" />
+	</definition>
+	<definition name="refdata-shop-view" template="/WEB-INF/jsp/refdata/shop/view.jsp" />
+	<definition name="refdata-shop-form" template="/WEB-INF/jsp/refdata/shop/form.jsp" />
+	
+	
+	<definition name="refdata-pai-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Primary Adp Number" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/shop/pai-list.jsp" />
+	</definition>
+	<definition name="refdata-pai-form" extends="baseLayout">
+				<put-attribute name="title" value="Reference Data - Primary Adp Number" />
+				<put-attribute name="body" value="/WEB-INF/jsp/refdata/shop/pai-form.jsp" />
+		
+	</definition>
+
+	<!-- REFDATA: ALERT -->
+	<definition name="refdata-alert-type-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Alert" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/alert-type/list.jsp" />
+	</definition>
+	<definition name="refdata-alert-type-form" template="/WEB-INF/jsp/refdata/alert-type/form.jsp" />
+	<definition name="refdata-alert-type-view" template="/WEB-INF/jsp/refdata/alert-type/view.jsp" />
+	<definition name="refdata-alert-subtype-form" template="/WEB-INF/jsp/refdata/alert-type/form-subtype.jsp" />
+	
+	<!-- REFDATA: EVENT -->
+	<definition name="refdata-event-type-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Event" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/event-type/list.jsp" />
+	</definition>
+	<definition name="refdata-event-type-form" template="/WEB-INF/jsp/refdata/event-type/form.jsp" />
+	<definition name="refdata-event-type-view" template="/WEB-INF/jsp/refdata/event-type/view.jsp" />
+	<definition name="refdata-event-subtype-form" template="/WEB-INF/jsp/refdata/event-type/form-subtype.jsp" />
+	
+	
+	
+	<!-- REFDATA: PRODUCT TYPE -->
+	<definition name="refdata-product-type-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - Product" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/product-type/list.jsp" />
+	</definition>
+	<definition name="refdata-product-type-view" template="/WEB-INF/jsp/refdata/product-type/view.jsp" />
+	<definition name="refdata-product-type-form" template="/WEB-INF/jsp/refdata/product-type/form.jsp" />
+	<definition name="refdata-product-subtype-form" template="/WEB-INF/jsp/refdata/product-type/form-subtype.jsp" />
+	
+	
+	<!-- REFDATA: MANUFACTURER -->
+	<definition name="refdata-manufacturer-list" extends="baseLayout">
+		<put-attribute name="title" value="Reference Data - manufacturer" />
+		<put-attribute name="body" value="/WEB-INF/jsp/refdata/manufacturer/list.jsp" />
+	</definition>
+	<definition name="refdata-manufacturer-form" template="/WEB-INF/jsp/refdata/manufacturer/form.jsp" />
+	<definition name="refdata-manufacturer-view" template="/WEB-INF/jsp/refdata/manufacturer/view.jsp" />
+	
+</tiles-definitions>

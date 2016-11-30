@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:sec="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+     	http://www.springframework.org/schema/security 
+     	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<sec:http pattern="/byebye" security="none" />
+
+
+	
+	<sec:http use-expressions="true" entry-point-ref="gaeEntryPoint">
+
+		<sec:anonymous username="Anonymous" granted-authority="ROLE_ANONYMOUS" />
+
+		<sec:intercept-url pattern="/_ah/login" access="permitAll" />
+		<sec:intercept-url pattern="/_ah/logout" access="permitAll" />
+		<sec:intercept-url pattern="/queue/**" access="permitAll" />
+		<sec:intercept-url pattern="/qj/**" access="permitAll" />
+		<!-- <sec:intercept-url pattern="/byebye" access="permitAll" /> <sec:intercept-url 
+			pattern="/**" access="permitAll" /> <sec:intercept-url pattern="/_ah/*" access="permitAll" 
+			/> <sec:intercept-url pattern="/**" access="permitAll" /> -->
+
+		<sec:intercept-url pattern="/**"
+			access="hasAnyRole('ROLE_USER','ROLE_CLINICIAN','ROLE_ADMIN')" />
+
+
+		<sec:custom-filter position="PRE_AUTH_FILTER" ref="gaeFilter" />
+		<!-- sec:logout logout-url="/bye" logout-success-url="/byebye" /-->
+		<sec:access-denied-handler error-page="/access-denied"/>
+	</sec:http>
+
+	<bean id="gaeEntryPoint"
+		class="com.esofa.gae.security.GoogleAccountsAuthenticationEntryPoint" />
+
+
+	<bean id="gaeFilter" class="com.esofa.gae.security.GaeAuthenticationFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="userService" ref="userService" />
+	</bean>
+
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider ref="gaeAuthenticationProvider" />
+	</sec:authentication-manager>
+
+
+	<bean id="userDetailsService" class="com.esofa.gae.security.GaeUserDetailsService">
+		<property name="userService" ref="userService" />
+	</bean>
+
+	<bean id="gaeAuthenticationProvider" class="com.esofa.gae.security.GaeAuthenticationProvider">
+		<property name="preAuthenticatedUserDetailsService" ref="userDetailsService" />
+		<property name="userService" ref="userService" />
+	</bean>
+
+	<bean
+		class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
+
+
+
+</beans>

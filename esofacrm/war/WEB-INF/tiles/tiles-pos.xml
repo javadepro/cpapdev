@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<!-- Customer -->
+	<definition name="pos-salesform" extends="baseLayout">
+		<put-attribute name="title" value="POS - Daily Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/form.jsp" />
+	</definition>
+	
+	<definition name="pos-invoiceform" extends="baseLayout">
+		<put-attribute name="title" value="Generate Customer Invoice"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-form.jsp"/>
+	</definition>
+	
+	<definition name="pos-invoice-view" extends="baseLayout">
+		<put-attribute name="title" value="View Customer Invoice"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-view.jsp"/>
+	</definition>
+	
+	<definition name="pos-invoice-search" extends="baseLayout">
+		<put-attribute name="title" value="Invoice Search"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-search.jsp"/>
+	</definition>	
+	
+	<definition name="pos-invoice-adpbulk-form" extends="baseLayout">
+		<put-attribute name="title" value="Invoice Adp Bulk Search"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-adpbulk-search.jsp"/>
+	</definition>			
+	
+	<definition name="pos-invoice-void-form" template="/WEB-INF/jsp/pos/invoice-void-form.jsp" />
+	
+	<definition name="pos-invoice-msg" template="/WEB-INF/jsp/message.jsp" />
+
+	<definition name="pos-invoice-pymt-list" extends="baseLayout">
+		<put-attribute name="title" value="Invoice Payment"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-pymt-list.jsp"/>
+	</definition>
+	
+	<definition name="pos-invoice-adp-pymt-list" extends="baseLayout">
+		<put-attribute name="title" value="Invoice ADP Payment"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/invoice-adp-pymt-list.jsp"/>
+	</definition>	
+	
+	<definition name="pos-pymt-edit-form" template="/WEB-INF/jsp/pos/pymt-edit-form.jsp" />	
+	<definition name="pos-pymt-msg" template="/WEB-INF/jsp/message.jsp" />
+	
+	<definition name="pos-edit-form" template="/WEB-INF/jsp/pos/invoice-edit-form.jsp" />
+	
+</tiles-definitions>

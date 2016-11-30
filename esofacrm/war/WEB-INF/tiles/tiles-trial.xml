@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- TRIAL/RENTAL MODULE -->
+	
+	<definition name="trial-list" extends="baseLayout">
+		<put-attribute name="title" value="trial" />
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/trial/list.jsp" />
+	</definition>
+	
+	
+	<definition name="trial-view" extends="baseLayout">
+		<put-attribute name="title" value="trial" />
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/trial/view.jsp" />
+	</definition>
+ 	
+	<definition name="trial-form" extends="baseLayout">
+		<put-attribute name="title" value="trial" />
+		<put-attribute name="body" value="/WEB-INF/jsp/pos/trial/form-edit.jsp" />
+	</definition>
+	
+	<definition name="trial-delete-form" template="/WEB-INF/jsp/pos/trial/delete-form.jsp" />
+	
+		<definition name="trial-delete-msg" template="/WEB-INF/jsp/message.jsp" />
+	
+</tiles-definitions>

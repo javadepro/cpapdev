@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="admin-config-list" extends="baseLayout">
+		<put-attribute name="title" value="Admin Config" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/config/list.jsp" />
+	</definition>
+	<definition name="admin-config-form" template="/WEB-INF/jsp/admin/config/form.jsp" />
+	<definition name="admin-config-view" template="/WEB-INF/jsp/admin/config/view.jsp" />
+	
+	<definition name="admin-rule-engine-list" extends="baseLayout">
+		<put-attribute name="title" value="Admin Rule Engine" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/rule-engine/list.jsp" />
+	</definition>
+	<definition name="admin-rule-engine-form" template="/WEB-INF/jsp/admin/rule-engine/form.jsp" />
+	<definition name="admin-rule-engine-view" template="/WEB-INF/jsp/admin/rule-engine/view.jsp" />
+</tiles-definitions>

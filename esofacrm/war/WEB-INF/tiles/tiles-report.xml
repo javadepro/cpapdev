@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="report-referral-list" extends="baseLayout">
+		<put-attribute name="title" value="Referral" />
+		<put-attribute name="body" value="/WEB-INF/jsp/report/list-referral.jsp" />
+	</definition>
+	
+	<definition name="report-date-range-form" extends="baseLayout">
+		<put-attribute name="title" value="Date Range Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/report/date-range.jsp" />
+	</definition>
+	
+	<definition name="report-snapshot-form" extends="baseLayout">
+		<put-attribute name="title" value="Snapshot Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/report/snapshot.jsp" />
+	</definition>	
+	
+</tiles-definitions>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" name="">
+
+
+	<defaultCache eternal="false" timeToIdleSeconds="120"
+		timeToLiveSeconds="120" overflowToDisk="false" diskPersistent="false"
+		memoryStoreEvictionPolicy="LRU" />
+
+	<!-- USER -->
+	<cache name="grantedAuthorityAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+		</cache>
+	<cache name="grantedAuthority" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<cache name="allowedIPAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="allowedIP" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="customerProfileTempAccessAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="customerProfileTempAccess" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="crmUser" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="crmUserAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="rule" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="ruleAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<!-- REFDATA -->
+	<cache name="refdataShopAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataActiveShopAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<cache name="refdataSleepClinicAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+		<cache name="refdataDentalClinicAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+
+	<cache name="refdataFamilyDoctorAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataFamilyDoctor" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataDentistAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataClinicianAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataClinician" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataManufacturererAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataManufacturerer" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="adminConfigAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="adminConfig" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="900"
+		timeToLiveSeconds="1800" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="invoiceCache" maxEntriesLocalHeap="5"
+		maxEntriesLocalDisk="10" eternal="false" timeToIdleSeconds="3000"
+		timeToLiveSeconds="6000" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="companyModeCache" maxEntriesLocalHeap="2"
+		maxEntriesLocalDisk="5" eternal="true" timeToIdleSeconds="3000"
+		timeToLiveSeconds="6000" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataSleepDoctorAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataSleepDoctor" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataFundingOptionAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataFundingOption" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataInsuranceProviderAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataInsuranceProvider" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataContactPreferenceAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+	<cache name="refdataDiscountReasonAll" maxEntriesLocalHeap="50"
+		maxEntriesLocalDisk="50" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+	
+
+	<cache name="refdataAppointmentPreferenceAll"
+		maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataCpapDiagnosisAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataSettings" maxEntriesLocalHeap="100"
+		maxEntriesLocalDisk="500" eternal="false" timeToIdleSeconds="3000"
+		timeToLiveSeconds="6000" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<!-- Types -->
+	<cache name="refdataAlertTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataAlertSubTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataAlertTypeMap" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<cache name="refdataEventTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataEventSubTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataEventTypeMap" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<cache name="refdataProductTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataProductSubTypeAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataProductTypeMap" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="refdataPrimaryAdp" maxEntriesLocalHeap="100"
+		maxEntriesLocalDisk="100" eternal="false" timeToIdleSeconds="1800"
+		timeToLiveSeconds="3600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<!-- Product -->
+	<cache name="productAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="product" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<!-- Customer -->
+	<cache name="customerAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="customer" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+	<!-- Customer Alerts -->
+	<cache name="customerAlert" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+	<cache name="customerAlertAll" maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="1000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="600" memoryStoreEvictionPolicy="LFU">
+		<!-- Customized Factory to put cache into Memcache -->
+		<cacheEventListenerFactory
+			class="com.esofa.gae.ehcache.GAECacheEventListenerFactory"
+			properties="" />
+	</cache>
+
+
+</ehcache>

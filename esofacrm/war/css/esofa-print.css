@@ -1,0 +1,97 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: white; 
+	font-size: 12pt; 
+}
+
+
+#bodyWrapper {
+	
+	width: auto;
+}
+
+
+.navimenu, #header, #invoiceTitle, .invoice-buttons, #footer, .messageblock, .invoice-summary-block  {
+	visibility: hidden;
+	display:none;
+}
+
+#invoiceWrapper {
+width: auto; margin: auto; 
+	padding: 0; 
+	border: 0; 
+	float: none !important; 
+	color: black; 
+	background: transparent; 
+}
+
+ 
+.invoicesetup-block, .productadd-block, .invoicenote-block {
+
+	visibility: hidden;
+	display: none;
+}
+
+.invoice-block{
+	
+	width: auto;
+	border: 0;
+}
+
+.invoice-logo-block, .invoice-cust-block {
+	display: block;
+	float:left;
+	width: 30%;
+}
+
+.invoice-addr-block {
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #444;
+	width: 40%;
+}
+
+
+.invoice-meta-block, .invoice-gov-block {
+	float: right;
+	width: 25%;
+}
+
+
+.invoice-item-block {
+
+	padding-left: 5px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	min-height:500px;
+	border: 1px solid #444;
+}
+
+.invoice-item-heading {
+	text-align: left;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.invoice-salesfinal {
+	visibility: visible;
+	display: block;
+	text-decoration:underline; 
+	text-align:center; 
+}
+
+.pageDesc {
+	display:none;
+	visibility: hidden;
+}
+.readonly-input {
+	border: none;
+}
+
+#balanceRemainingCash {
+	display: none;
+}
+

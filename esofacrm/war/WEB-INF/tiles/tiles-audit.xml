@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- AUDIT MODULE -->
+	<definition name="audit-list" extends="baseLayout">
+		<put-attribute name="title" value="Audit" />
+		<put-attribute name="body" value="/WEB-INF/jsp/audit/list.jsp" />
+	</definition>	
+</tiles-definitions>

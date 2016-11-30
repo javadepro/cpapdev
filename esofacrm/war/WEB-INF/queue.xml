@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queue-entries>
+  <queue>
+    <name>message-queue</name>
+    <rate>20/s</rate>
+    <bucket-size>40</bucket-size>
+    <retry-parameters>
+      <task-retry-limit>3</task-retry-limit>
+    </retry-parameters>
+  </queue>
+  <queue>
+    <name>backup-queue</name>
+    <rate>20/s</rate>
+    <bucket-size>40</bucket-size>
+    <retry-parameters>
+      <task-retry-limit>3</task-retry-limit>
+    </retry-parameters>
+  </queue>
+  <queue>
+  	<name>data-migration-queue</name>
+  	<rate>20/s</rate>
+  	<bucket-size>1</bucket-size>
+  	<max-concurrent-requests>1</max-concurrent-requests>
+  </queue>
+</queue-entries>
