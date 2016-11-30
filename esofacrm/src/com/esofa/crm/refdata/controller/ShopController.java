@@ -27,8 +27,7 @@ import com.googlecode.objectify.Key;
 @Controller
 @RequestMapping(value = "/refdata/shop")
 public class ShopController extends GaeEnhancedController {
-	private static final Logger log = Logger.getLogger(ShopController.class
-			.getName());
+	private static final Logger log = Logger.getLogger(ShopController.class.getName());
 
 	@Autowired private RefdataService refdataService;
 	
